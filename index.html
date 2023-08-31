@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Atlas</title>
+	<link rel="stylesheet" href="css/glightbox.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+					<!--Logo-->
+					<a href="index.html" class="header__logo">
+						<picture>
+							<source srcset="images/icon/logo.webp 1x, images/icon/logo@2x.webp 1.3x" type="image/webp">
+							<source srcset="images/icon/logo.png 1x, images/icon/logo@2x.png 1.3x" type="image/png">
+							<img src="images/icon/logo.png" width="116" height="68" alt="Atlas">
+						</picture>
+					</a>
+					<div class="header__panel">
+						<ul class="header-contacts list-reset">
+							<li class="header-contacts__item">
+								<a href="mailto:Fishmail@mail.com" class="header-contacts__link">
+									<img src="images/icon/mail.svg" alt="" width="36" height="36">
+									<span>Fishmail@mail.com</span>
+								</a>
+							</li>
+							<li class="header-contacts__item">
+								<a href="tel:79828377623" class="header-contacts__link">
+									<img src="images/icon/mail.svg" alt="" width="36" height="36">
+									<span>+7 (982) 837-76-23</span>
+								</a>
+							</li>
+						</ul>
+						<button type="button" class="b-btn b-btn--outline-primary js-show-popup" data-trigger="connection-popup">Оставить заявку
+						</button>
+					</div>
+					<div class="header__burger">
+						<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+							<span class="burger__line"></span>
+						</button>
+					</div>
+				</div>
+				<div class="header__bottom" data-menu>
+					<div class="header__wrap">
+						<nav class="header__menu nav">
+							<ul class="nav__list list-reset">
+								<li class="nav__item">
+									<a href="#about" class="nav__link js-smooth-scroll">
+										<span>Кто мы</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#colleagues" class="nav__link js-smooth-scroll">
+										<span>Коллеги</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#choice" class="nav__link js-smooth-scroll">
+										<span>Почему мы</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#services" class="nav__link js-smooth-scroll">
+										<span>Услуги</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#target" class="nav__link js-smooth-scroll">
+										<span>Цель</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#practice" class="nav__link js-smooth-scroll">
+										<span>Ценности</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<ul class="contacts list-reset">
+							<li class="contacts__item">
+								<div class="contacts__name">
+									Телефон
+								</div>
+								<a href="+79828377623" class="contacts__link">+7 (982) 837-76-23</a>
+							</li>
+							<li class="contacts__item">
+								<div class="contacts__name">
+									Почта
+								</div>
+								<a href="mailto:Fishmail@mail.com" class="contacts__link">Fishmail@mail.com</a>
+							</li>
+							<li class="contacts__item">
+								<div class="contacts__name">
+									Соцсети
+								</div>
+								<div class="s-block">
+									<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+										<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g filter="url(#filter0_b_735_1141)">
+												<circle cx="18" cy="18" r="18" fill="#333333" />
+												<g clip-path="url(#clip0_735_1144)">
+													<path d="M24.7011 11.4194L10.5259 16.914C9.95541 17.1699 9.76248 17.6823 10.388 17.9604L14.0245 19.122L22.8173 13.6598C23.2974 13.3169 23.7889 13.4084 23.3659 13.7856L15.8142 20.6585L15.5769 23.5672C15.7967 24.0163 16.199 24.0184 16.4556 23.7951L18.5449 21.808L22.1232 24.5013C22.9543 24.9959 23.4065 24.6767 23.5853 23.7703L25.9324 12.5993C26.176 11.4835 25.7605 10.9919 24.7011 11.4194Z" fill="white" />
+												</g>
+											</g>
+											<defs>
+												<filter id="filter0_b_735_1142" x="-7" y="-7" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+													<feFlood flood-opacity="0" result="BackgroundImageFix" />
+													<feGaussianBlur in="BackgroundImageFix" stdDeviation="3.5" />
+													<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_735_1144" />
+													<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_735_1144" result="shape" />
+												</filter>
+												<clipPath id="clip0_735_1123">
+													<rect width="16" height="16" fill="white" transform="translate(10 10)" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+									<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+										<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g filter="url(#filter0_b_735_1143)">
+												<circle cx="18" cy="18" r="18" fill="#333333" />
+												<path d="M11.3357 24.6667L12.237 21.3547C11.6431 20.3366 11.3311 19.1787 11.333 18C11.333 14.318 14.3177 11.3334 17.9997 11.3334C21.6817 11.3334 24.6664 14.318 24.6664 18C24.6664 21.682 21.6817 24.6667 17.9997 24.6667C16.8215 24.6686 15.6641 24.3568 14.6463 23.7634L11.3357 24.6667ZM15.5937 14.872C15.5076 14.8774 15.4235 14.9001 15.3464 14.9387C15.274 14.9797 15.208 15.0309 15.1504 15.0907C15.0703 15.166 15.025 15.2314 14.9764 15.2947C14.73 15.6154 14.5974 16.009 14.5997 16.4134C14.601 16.74 14.6864 17.058 14.8197 17.3554C15.0924 17.9567 15.541 18.5934 16.1337 19.1834C16.2764 19.3254 16.4157 19.468 16.5657 19.6007C17.3013 20.2484 18.1779 20.7154 19.1257 20.9647L19.505 21.0227C19.6284 21.0294 19.7517 21.02 19.8757 21.014C20.0698 21.004 20.2594 20.9514 20.431 20.86C20.5183 20.8151 20.6035 20.7661 20.6864 20.7134C20.6864 20.7134 20.715 20.6947 20.7697 20.6534C20.8597 20.5867 20.915 20.5394 20.9897 20.4614C21.045 20.404 21.093 20.3367 21.1297 20.26C21.1817 20.1514 21.2337 19.944 21.255 19.7714C21.271 19.6394 21.2663 19.5674 21.2643 19.5227C21.2617 19.4514 21.2024 19.3774 21.1377 19.346L20.7497 19.172C20.7497 19.172 20.1697 18.9194 19.8157 18.758C19.7784 18.7418 19.7384 18.7325 19.6977 18.7307C19.6521 18.726 19.606 18.7312 19.5625 18.7458C19.5191 18.7604 19.4792 18.7841 19.4457 18.8154V18.814C19.4424 18.814 19.3977 18.852 18.9157 19.436C18.888 19.4732 18.8499 19.5013 18.8062 19.5167C18.7625 19.5322 18.7152 19.5343 18.6704 19.5227C18.6269 19.5111 18.5844 19.4964 18.543 19.4787C18.4604 19.444 18.4317 19.4307 18.375 19.406L18.3717 19.4047C17.9903 19.2382 17.6372 19.0133 17.325 18.738C17.241 18.6647 17.163 18.5847 17.083 18.5074C16.8207 18.2562 16.5922 17.972 16.403 17.662L16.3637 17.5987C16.3354 17.5562 16.3126 17.5102 16.2957 17.462C16.2704 17.364 16.3364 17.2854 16.3364 17.2854C16.3364 17.2854 16.4984 17.108 16.5737 17.012C16.6364 16.9323 16.6949 16.8493 16.749 16.7634C16.8277 16.6367 16.8524 16.5067 16.811 16.406C16.6244 15.95 16.431 15.496 16.2324 15.0454C16.193 14.956 16.0764 14.892 15.9704 14.8794C15.9344 14.8754 15.8983 14.8714 15.8623 14.8687C15.7728 14.8643 15.6831 14.8652 15.5937 14.8714V14.872Z" fill="white" />
+											</g>
+											<defs>
+												<filter id="filter0_b_735_1144" x="-7" y="-7" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+													<feFlood flood-opacity="0" result="BackgroundImageFix" />
+													<feGaussianBlur in="BackgroundImageFix" stdDeviation="3.5" />
+													<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_735_1148" />
+													<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_735_1148" result="shape" />
+												</filter>
+											</defs>
+										</svg>
+									</a>
+								</div>
+
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+					<div class="hero__wrapper">
+						<h1 class="hero__title">
+							Atlas
+						</h1>
+						<a href="#" class="b-btn b-btn--primary">Найти решение</a>
+					</div>
+				</div>
+			</section>
+			<section class="about section-offset" id="about">
+				<div class="container">
+					<h2 class="section-title about__title">
+						Кто мы
+					</h2>
+					<div class="about__grid">
+						<div class="about-item">
+							<div class="about-item__img">
+								<picture>
+									<source srcset="images/home/about/about-1.webp 1x, images/home/about/about-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/about/about-1.png 1x, images/home/about/about-1@2x.png 1.3x" type="image/png">
+									<img src="images/home/about/about-1.png" width="160" height="160" alt="">
+								</picture>
+							</div>
+							<div class="about-item__wrap">
+								<h3 class="about-item__title">
+									Рекрутинговая компания
+								</h3>
+								<div class="about-item__text">
+									<p>
+										Эспертиза в области поиска и найма руководителей высшего и среднего звена. Работаем в сфере
+										Executive Search c 2011 года, подбираем менеджеров для компаний в России и за рубежом.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="about-item">
+							<div class="about-item__img">
+								<picture>
+									<source srcset="images/home/about/about-2.webp 1x, images/home/about/about-2@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/about/about-2.png 1x, images/home/about/about-2@2x.png 1.3x" type="image/png">
+									<img src="images/home/about/about-2.png" width="160" height="160" alt="">
+								</picture>
+							</div>
+							<div class="about-item__wrap">
+								<h3 class="about-item__title">
+									Разбираемся в деталях
+								</h3>
+								<div class="about-item__text">
+									<p>
+										Наша команда профессионалов знает специфику разных отраслей рынка и понимает, как меняются
+										запросы компаний-работодателей. На каждом направлении работает выделенная экспертная группа
+										консультантов и аналитиков.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="about-item">
+							<div class="about-item__img">
+								<picture>
+									<source srcset="images/home/about/about-3.webp 1x, images/home/about/about-3@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/about/about-3.png 1x, images/home/about/about-3@2x.png 1.3x" type="image/png">
+									<img src="images/home/about/about-3.png" width="160" height="160" alt="">
+								</picture>
+							</div>
+							<div class="about-item__wrap">
+								<h3 class="about-item__title">
+									Полный цикл услуг
+								</h3>
+								<div class="about-item__text">
+									<p>
+										От разработки стратегии поиска до оценки эффективности выбранных кандидатов. Даем гарантии и
+										отвечаем за результат.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="colleagues section-offset" id="colleagues">
+				<div class="container">
+					<h2 class="section-title colleagues__title">
+						Коллеги
+					</h2>
+					<div class="colleagues__grid">
+						<div class="colleagues-item">
+							<div class="colleagues-item__top">
+								<div class="colleagues-item__count">
+									<div>11</div>
+									<div>лет</div>
+								</div>
+							</div>
+							<div class="colleagues__text">
+								<p>
+									Команда компании работала в составе голландской аутсорсинговой компании Atlas Professionals
+								</p>
+							</div>
+						</div>
+						<div class="colleagues__img">
+							<picture>
+								<source media="(min-width: 1279px)" srcset="images/home/colleagues/colleagues-desktop.webp 1x, images/home/colleagues/colleagues-desktop@2x.webp 1.3x" type="image/webp">
+								<source media="(min-width: 1279px)" srcset="images/home/colleagues/colleagues-desktop.jpg 1x, images/home/colleagues/colleagues-desktop@2x.jpg 1.3x" type="image/jpg">
+								<source media="(min-width: 768px)" srcset="images/home/colleagues/colleagues-tablet.webp 1x, images/home/colleagues/colleagues-tablet@2x.webp 1.3x" type="image/webp">
+								<source media="(min-width: 768px)" srcset="images/home/colleagues/colleagues-tablet.jpg 1x, images/home/colleagues/colleagues-tablet@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/home/colleagues/colleagues-desktop.jpg" width="393" height="354" alt="">
+							</picture>
+						</div>
+						<div class="colleagues-item">
+							<div class="colleagues-item__top">
+								<div class="colleagues-item__count">
+									<div>2022</div>
+									<div>год</div>
+								</div>
+							</div>
+							<div class="colleagues__text">
+								<p>
+									российское подразделение было преобразовано в самостоятельную бизнес-структуру – российскую
+									рекрутинговую компанию Atlas
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="choice section-offset" id="choice">
+				<div class="choice__wrapper">
+					<div class="container">
+						<h2 class="section-title choice__title">
+							Почему выбирают нас
+						</h2>
+						<ul class="choice__list list-reset">
+							<li class="choice__item">
+								<div class="choice__name">
+									Не боимся сложностей
+								</div>
+								<div class="choice__text">
+									<p>
+										Выполняем комплексные и индивидуальные заявки в самые короткие сроки, подбираем специалистов
+										с
+										экспертизой в сложных производственных процессах.
+									</p>
+								</div>
+							</li>
+							<li class="choice__item">
+								<div class="choice__name">
+									Предлагаем нестандартные решения
+								</div>
+								<div class="choice__text">
+									<p>
+										Вовлекаемся в процесс исследования рынка кандидатов уже на стадии обсуждения возможной
+										вакансии.
+									</p>
+								</div>
+							</li>
+							<li class="choice__item">
+								<div class="choice__name">
+									Ведем бизнес добросовестно
+								</div>
+								<div class="choice__text">
+									<p>
+										Работаем с клиентами в полном соответствии с актуальным законодательством РФ и ожидаем того
+										же
+										от своих партнеров
+									</p>
+								</div>
+							</li>
+							<li class="choice__item">
+								<div class="choice__name">
+									Следим за юридической стороной рынка труда
+								</div>
+								<div class="choice__text">
+									<p>
+										Мониторим поправки в трудовое, налоговое и миграционное законодательство, учитываем
+										изменения
+										стандартов промышленной безопасности и охраны труда.
+									</p>
+								</div>
+							</li>
+							<li class="choice__item">
+								<div class="choice__name">
+									Предлагаем решения на основе данных
+								</div>
+								<div class="choice__text">
+									<p>
+										Следим за исследованиями рынка и анализируем статистику, консультируемся с лидерами отраслей
+										и
+										проводим внутренние исследования для компаний.
+									</p>
+								</div>
+							</li>
+							<li class="choice__item">
+								<div class="choice__name">
+									Оперативно помогаем в любой ситуации
+								</div>
+								<div class="choice__text">
+									<p>
+										Наша квалифицированная команда поддержки работает 24 часа в сутки без выходных и праздников.
+									</p>
+								</div>
+							</li>
+							<li class="choice__item">
+								<div class="choice__name">
+									Отвечаем за результат
+								</div>
+								<div class="choice__text">
+									<p>
+										Сопровождаем кандидатов до окончания испытательного срока и даем клиенту гарантию замены
+										сотрудника (период зависит от уровня позиции).
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="services section-offset" id="services">
+				<div class="container">
+					<h2 class="section-title services__title">
+						Наши услуги
+					</h2>
+					<div class="services__wrapper">
+						<div class="tabs" data-tabs="wrapper">
+							<div class="tabs__wrap">
+								<div class="tabs__head">
+									<button type="button" data-tabs="link" data-target="#tab-1" class="tabs__button active">
+										Рекрутинг
+									</button>
+									<button type="button" data-tabs="link" data-target="#tab-2" class="tabs__button">Аутплейсмент
+									</button>
+									<button type="button" data-tabs="link" data-target="#tab-3" class="tabs__button">Исследования
+										рынка
+									</button>
+								</div>
+							</div>
+							<div class="tabs__content active" data-tabs="item" id="tab-1">
+								<div class="services-item">
+									<div class="services-item__left">
+										<div class="services-item__wrap">
+											<h3 class="services-item__title">
+												Рекрутинг
+											</h3>
+											<div class="services-item__subtitle">
+												Возьмем на себя поиск и найм управленцев
+											</div>
+										</div>
+										<a href="#" class="b-btn b-btn--primary">Заказать услугу</a>
+									</div>
+									<div class="services-item__right">
+										<div class="services-item__text">
+											<p>
+												Результаты работ по каждому этапу согласуются с клиентом. Начинаем с разработки
+												стратегии поиска и анализа состояния отрасли, чтобы составить профиль позиции и
+												определить критерии подбора кандидатов. Ищем специалистов по внутренним каналам,
+												проводим открытый поиск и headhunting. На этапе собеседований подтверждаем опыт и
+												навыки кандидатов, формируем шорт-лист и проводим углубленную оценку экспертизы
+												финалистов. Сопровождаем выбранного кандидата в период согласования оффера и на
+												испытательном сроке. Вместе с клиентом анализируем эффективность выполнения заявки.
+											</p>
+										</div>
+										<div class="services-item__img">
+											<picture>
+												<source srcset="images/home/services/services-1.webp 1x, images/home/services/services-1@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/services/services-1.png 1x, images/home/services/services-1@2x.png 1.3x" type="image/png">
+												<img src="images/home/services/services-1.png" width="302" height="302" alt="Atlas">
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__content" data-tabs="item" id="tab-2">
+								<div class="services-item">
+									<div class="services-item__left">
+										<div class="services-item__wrap">
+											<h3 class="services-item__title">
+												Аутплейсмент
+											</h3>
+											<div class="services-item__subtitle">
+												Поможем организовать оптимизацию
+											</div>
+										</div>
+										<a href="#" class="b-btn b-btn--primary">Заказать услугу</a>
+									</div>
+									<div class="services-item__right">
+										<div class="services-item__text">
+											<p>
+												Помогаем быстро и бережно провести реорганизацию компании: проводим аудит
+												организационной структуры компании и разрабатываем стратегию оптимизации персонала.
+												Берем на себя кадровый документооборот процесса реорганизации. Организуем поддержку
+												уходящих кандидатов, а также оцениваем компетенции остающихся специалистов и
+												составляем карьерную траекторию их будущего профессионального развития в компании.
+											</p>
+										</div>
+										<div class="services-item__img">
+											<picture>
+												<source srcset="images/home/services/services-2.webp 1x, images/home/services/services-2@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/services/services-2.png 1x, images/home/services/services-2@2x.png 1.3x" type="image/png">
+												<img src="images/home/services/services-2.png" width="302" height="302" alt="Atlas">
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__content" data-tabs="item" id="tab-3">
+								<div class="services-item">
+									<div class="services-item__left">
+										<div class="services-item__wrap">
+											<h3 class="services-item__title">
+												Исследования рынка
+											</h3>
+											<div class="services-item__subtitle">
+												Cоберем данные для ваших решений
+											</div>
+										</div>
+										<a href="#" class="b-btn b-btn--primary">Заказать услугу</a>
+									</div>
+									<div class="services-item__right">
+										<div class="services-item__text">
+											<p>
+												Проводим исследование по вашему запросу: составим отчет о рынке кандидатов по
+												конкретным позициям и опишем профили должностей в соответствии с актуальным
+												состоянием отрасли. Оценим уровень заработных плат в отрасли и дадим рекомендации по
+												структурированию дохода сотрудников.
+											</p>
+										</div>
+										<div class="services-item__img">
+											<picture>
+												<source srcset="images/home/services/services-3.webp 1x, images/home/services/services-3@2x.webp 1.3x" type="image/webp">
+												<source srcset="images/home/services/services-3.png 1x, images/home/services/services-3@2x.png 1.3x" type="image/png">
+												<img src="images/home/services/services-3.png" width="302" height="302" alt="Atlas">
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="target section-offset" id="target">
+				<div class="container">
+					<div class="target__wrapper">
+						<div class="target__main">
+							<div class="target__text">
+								<p>
+									Наша главная цель – услышать клиента и организовать с ним эффективный диалог. Такое качество
+									коммуникации позволяет гарантировать быстрое и результативное закрытие вакансии.
+								</p>
+							</div>
+							<div class="target__arrow">
+								<img src="images/icon/arrow-right.svg" alt="" width="43" height="43">
+								<span>Посмотрите видео презентацию о нашем подходе к работе</span>
+							</div>
+						</div>
+						<div class="target__video">
+							<a href="https://www.youtube.com/embed/DzNmUNvnB04" class="video glightbox">
+								<div class="video__poster">
+									<picture>
+										<source srcset="images/home/target/video-poster.webp 1x, images/home/target/video-poster@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/target/video-poster.jpg 1x, images/home/target/video-poster@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/home/target/video-poster.jpg" width="655" height="363" alt="">
+									</picture>
+								</div>
+								<div class="video__btn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+										<circle cx="24" cy="24" r="24" fill="#333333" />
+										<path d="M32.4707 23.9999L19.7648 31.3356L19.7648 16.6641L32.4707 23.9999Z" fill="white" />
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="practice section-offset" id="practice">
+				<div class="container">
+					<h2 class="section-title practice__title">
+						Как наши ценности выглядят на практике
+					</h2>
+					<div class="practice__wrapper">
+						<div class="practice__left">
+							<h3 class="practice__subtitle">
+								С&nbsp;любовью к&nbsp;процессу, с&nbsp;уважением к&nbsp;результату
+							</h3>
+							<div class="practice__text">
+								<p>
+									Мы ориентируемся на результат и стремимся находить лучшее решение для наших партнеров.
+									Поддерживаем клиентов в кризисных ситуациях: относимся с уважением к их решениям и помогаем им
+									преодолевать возникающие трудности. Заботимся о своей репутации, поэтому строим доверительные
+									отношения с партнерами: соблюдаем сроки и отвечаем за точность подбора персонала. Внимательно
+									относимся к обратной связи от клиентов, быстро адаптируемся к изменению запросов. Работаем
+									оперативно, предлагаем сценарии решения поставленных задач, составляем экспертные рекомендации
+									на основе данных. С уверенностью беремся за решение масштабных задач и не боимся предлагать
+									нестандартные решения.
+								</p>
+							</div>
+						</div>
+						<div class="practice-card">
+							<div class="practice-card__img">
+								<picture>
+									<source srcset="images/home/practice/practice.webp 1x, images/home/practice/practice@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/practice/practice.png 1x, images/home/practice/practice@2x.png 1.3x" type="image/png">
+									<img src="images/home/practice/practice.png" width="167" height="167" alt="">
+								</picture>
+							</div>
+							<div class="practice-card__wrap">
+								<div class="practice-card__name">
+									Юлия Донькина
+								</div>
+								<div class="practice-card__position">
+									Генеральный директор
+								</div>
+								<div class="practice-card__about">
+									Если вам нужна помочь с подбором персонала, буду рада проконсультировать
+								</div>
+								<a href="#" class="b-btn b-btn--primary">Бесплатная консультация</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__grid">
+					<div class="footer__item">
+						<div class="footer__icon">
+							<img src="images/icon/phone-footer.svg" alt="" width="36" height="36">
+						</div>
+						<div class="footer__wrap">
+							<div class="footer__name">
+								Телефон
+							</div>
+							<a href="tel:+79828377623" class="footer__link">+7 (982) 837-76-23</a>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__icon">
+							<img src="images/icon/mail-footer.svg" alt="" width="36" height="36">
+						</div>
+						<div class="footer__wrap">
+							<div class="footer__name">
+								Почта
+							</div>
+							<a href="mailto:Fishmail@mail.com" class="footer__link">Fishmail@mail.com</a>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__icon">
+							<img src="images/icon/socials.svg" alt="" width="36" height="36">
+						</div>
+						<div class="footer__wrap">
+							<div class="footer__name">
+								Соцсети
+							</div>
+							<div class="s-block">
+								<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g filter="url(#filter0_b_735_1146)">
+											<circle cx="18" cy="18" r="18" fill="#333333" />
+											<g clip-path="url(#clip0_735_1144)">
+												<path d="M24.7011 11.4194L10.5259 16.914C9.95541 17.1699 9.76248 17.6823 10.388 17.9604L14.0245 19.122L22.8173 13.6598C23.2974 13.3169 23.7889 13.4084 23.3659 13.7856L15.8142 20.6585L15.5769 23.5672C15.7967 24.0163 16.199 24.0184 16.4556 23.7951L18.5449 21.808L22.1232 24.5013C22.9543 24.9959 23.4065 24.6767 23.5853 23.7703L25.9324 12.5993C26.176 11.4835 25.7605 10.9919 24.7011 11.4194Z" fill="white" />
+											</g>
+										</g>
+										<defs>
+											<filter id="filter0_b_735_1147" x="-7" y="-7" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feGaussianBlur in="BackgroundImageFix" stdDeviation="3.5" />
+												<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_735_1144" />
+												<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_735_1144" result="shape" />
+											</filter>
+											<clipPath id="clip0_735_1141">
+												<rect width="16" height="16" fill="white" transform="translate(10 10)" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="#" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g filter="url(#filter0_b_735_1142)">
+											<circle cx="18" cy="18" r="18" fill="#333333" />
+											<path d="M11.3357 24.6667L12.237 21.3547C11.6431 20.3366 11.3311 19.1787 11.333 18C11.333 14.318 14.3177 11.3334 17.9997 11.3334C21.6817 11.3334 24.6664 14.318 24.6664 18C24.6664 21.682 21.6817 24.6667 17.9997 24.6667C16.8215 24.6686 15.6641 24.3568 14.6463 23.7634L11.3357 24.6667ZM15.5937 14.872C15.5076 14.8774 15.4235 14.9001 15.3464 14.9387C15.274 14.9797 15.208 15.0309 15.1504 15.0907C15.0703 15.166 15.025 15.2314 14.9764 15.2947C14.73 15.6154 14.5974 16.009 14.5997 16.4134C14.601 16.74 14.6864 17.058 14.8197 17.3554C15.0924 17.9567 15.541 18.5934 16.1337 19.1834C16.2764 19.3254 16.4157 19.468 16.5657 19.6007C17.3013 20.2484 18.1779 20.7154 19.1257 20.9647L19.505 21.0227C19.6284 21.0294 19.7517 21.02 19.8757 21.014C20.0698 21.004 20.2594 20.9514 20.431 20.86C20.5183 20.8151 20.6035 20.7661 20.6864 20.7134C20.6864 20.7134 20.715 20.6947 20.7697 20.6534C20.8597 20.5867 20.915 20.5394 20.9897 20.4614C21.045 20.404 21.093 20.3367 21.1297 20.26C21.1817 20.1514 21.2337 19.944 21.255 19.7714C21.271 19.6394 21.2663 19.5674 21.2643 19.5227C21.2617 19.4514 21.2024 19.3774 21.1377 19.346L20.7497 19.172C20.7497 19.172 20.1697 18.9194 19.8157 18.758C19.7784 18.7418 19.7384 18.7325 19.6977 18.7307C19.6521 18.726 19.606 18.7312 19.5625 18.7458C19.5191 18.7604 19.4792 18.7841 19.4457 18.8154V18.814C19.4424 18.814 19.3977 18.852 18.9157 19.436C18.888 19.4732 18.8499 19.5013 18.8062 19.5167C18.7625 19.5322 18.7152 19.5343 18.6704 19.5227C18.6269 19.5111 18.5844 19.4964 18.543 19.4787C18.4604 19.444 18.4317 19.4307 18.375 19.406L18.3717 19.4047C17.9903 19.2382 17.6372 19.0133 17.325 18.738C17.241 18.6647 17.163 18.5847 17.083 18.5074C16.8207 18.2562 16.5922 17.972 16.403 17.662L16.3637 17.5987C16.3354 17.5562 16.3126 17.5102 16.2957 17.462C16.2704 17.364 16.3364 17.2854 16.3364 17.2854C16.3364 17.2854 16.4984 17.108 16.5737 17.012C16.6364 16.9323 16.6949 16.8493 16.749 16.7634C16.8277 16.6367 16.8524 16.5067 16.811 16.406C16.6244 15.95 16.431 15.496 16.2324 15.0454C16.193 14.956 16.0764 14.892 15.9704 14.8794C15.9344 14.8754 15.8983 14.8714 15.8623 14.8687C15.7728 14.8643 15.6831 14.8652 15.5937 14.8714V14.872Z" fill="white" />
+										</g>
+										<defs>
+											<filter id="filter0_b_735_1140" x="-7" y="-7" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix" />
+												<feGaussianBlur in="BackgroundImageFix" stdDeviation="3.5" />
+												<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_735_1148" />
+												<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_735_1148" result="shape" />
+											</filter>
+										</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<a href="#">
+						Политика конфиденциальности
+					</a>
+					<a href="https://rhino-digital.com/" target="_blank">Дизайн и разработка Rhino</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="overlay js-overlay"></div>
+	<div class="popup popup--connection js-popup" data-popup="connection-popup">
+		<button type="button" class="popup__close js-popup-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M8.6259 8.62639C9.01643 8.23587 9.64959 8.23587 10.0401 8.62639L23.3734 21.9597C23.764 22.3502 23.764 22.9834 23.3734 23.3739C22.9829 23.7645 22.3498 23.7645 21.9592 23.3739L8.6259 10.0406C8.23538 9.65008 8.23538 9.01691 8.6259 8.62639Z" fill="#1C1B1E" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M23.3734 8.62639C23.764 9.01691 23.764 9.65008 23.3734 10.0406L10.0401 23.3739C9.64959 23.7645 9.01643 23.7645 8.6259 23.3739C8.23538 22.9834 8.23538 22.3502 8.6259 21.9597L21.9592 8.62639C22.3498 8.23587 22.9829 8.23587 23.3734 8.62639Z" fill="#1C1B1E" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="connection">
+				<div class="connection__wrapper">
+					<div class="connection__wrap">
+						<h3 class="connection__title">
+							Свяжитесь с нами
+						</h3>
+						<div class="connection__text">
+							<p>
+								Напишите нам и мы свяжеимся с вами в ближайшее время
+							</p>
+						</div>
+					</div>
+					<form action="#" class="form" id="connect-form">
+						<div class="form__row form__row--error">
+							<label for="connect-name" class="form__label">
+								<input type="text" class="form__input" id="connect-name" placeholder="Ваше имя">
+							</label>
+							<div class="form__error">Заполните поле</div>
+						</div>
+						<div class="form__row">
+							<label for="connect-tel" class="form__label">
+								<input type="text" class="form__input" id="connect-tel" placeholder="+7 (999) 999-99-99">
+							</label>
+							<div class="form__error">Заполните поле</div>
+						</div>
+						<div class="form__row">
+							<label for="connect-email" class="form__label">
+								<input type="text" class="form__input" id="connect-email" placeholder="Email">
+							</label>
+							<div class="form__error">Заполните поле</div>
+						</div>
+						<button type="button" class="b-btn b-btn--primary">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/glightbox.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
